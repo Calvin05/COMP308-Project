@@ -17,7 +17,7 @@
     "express-session": "^1.17.0",
     "method-override": "^3.0.0",
     "mongo": "^0.1.0",
-    "mongoose": "4.6.5",
+    "mongoose": "5.7.5",
     "morgan": "^1.9.1"
   }
 }
