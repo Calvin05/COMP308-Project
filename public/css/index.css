@@ -1,0 +1,157 @@
+body {
+  background-image: url(/img/background.jpg);
+  background-size: cover;
+}
+#allpage{
+    margin: 10px auto;
+    margin-top: 8em;
+    width: 900px;
+    height: 520px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.5);
+  }
+  #welcome {
+    width: 540px;
+    float: left;
+    height: 100%;
+    background-image: url(/img/cover.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    /* background-size: cover; */
+    text-align: left;
+    border-radius: 3px 0 0 3px;
+    background-color: #2b4f71;
+  }
+  #welcome h1 {
+    font-size: 60px;
+
+  }
+  #welcome h1, h2, h3, h4 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+  }
+
+  #welcome h3 {
+    color: coral;
+    width: 400px;
+  } 
+
+  #welcome h2 {
+    font-size: 40px;
+    width: 400px;
+  } 
+
+  
+  #login {
+    height: 100%;
+    width: 360px;
+    float: right;
+    text-align: center;
+  }
+
+  #login h1{
+    padding-top: 0.3em;
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+  #line {
+    height: 2px;
+    background-color: black;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+  #book 
+  {
+    height: 100%;
+    float: left;
+    border-radius: 3px;
+  }
+  #form {
+    padding: 20px;
+    padding-top: 10px;
+    text-align: center;
+    margin: auto;
+    
+  }
+  #form form {
+    text-align: left;
+    margin-left: 3em;
+  }
+  input {
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #CDCDCD;
+    font-size: 17px;
+    padding-left: 4px;
+  }
+  input[type="text"] 
+  {
+    font-size: 20px;
+  }
+  button 
+  {
+    margin-top: 40px;
+    width: 81.5%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #CDCDCD;
+    font-size: 17px;
+    background-color: #4CAF50;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+  }
+  button:hover
+  {
+    filter: brightness(0.9);
+  }
+  label
+{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.labelP 
+{
+  margin-bottom: 5px;
+}
+
+#noacc {
+  margin-top: 40px;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#signup, #signup:visited, #signup:hover, #signup:active {
+  font-family: 'Roboto', sans-serif;
+  color: #1089ff;
+
+}
+
+#validation {
+  margin: 0px;
+  color: #f46060;
+}
+
+#display {
+  color:darkgray;
+  margin: auto;
+  margin-top: 60px;
+  width: 640px;
+  display: block;
+  background-color: whitesmoke;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 25px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#display:hover {
+  color: #fff;
+  background-color: #ebb810;
+}

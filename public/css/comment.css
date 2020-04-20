@@ -1,0 +1,30 @@
+body {
+    background-image: url(/img/background.jpg);
+    background-size: cover;
+  }
+  #allpage{
+      margin: 10px auto;
+      margin-top: 8em;
+      width: 640px;
+      background-color: #fff;
+      border-radius: 3px;
+      box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.5);
+    }
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+a {
+  font-family: 'Roboto', sans-serif;
+  color: #1089ff;
+  text-decoration: none;
+  width: 120px;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+

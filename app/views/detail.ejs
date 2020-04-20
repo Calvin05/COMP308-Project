@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/comment.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div id='allpage'>
+        <h2 style="margin-bottom: 15px; padding-top: 10px;">Patient Name: <%= name %></h2>
+        <table style="width: 92%; margin: 0 auto;" class="table table-bordered table-sm table-light">
+            <tr style="background-color: #f4a460;">
+                <th class="text-left">Pulse Rate</th>
+                <th class="text-left">Blood Pressure </th>
+                <th class="text-left">weight</th>
+                <th class="text-left">Temperature</th>
+                <th class="text-left">Respiratory Rate</th>
+                <th class="text-left">Date</th>
+            </tr>
+            <% signs.forEach(function(sign){ %>
+                <tr id="tbrow">
+                    <td class="text-left"><%= sign.pulseRate %></td>
+                    <td class="text-left"><%= sign.bloodPressure %></td>
+                    <td class="text-left"><%= sign.weight %></td>
+                    <td class="text-left"><%= sign.temperature %></td>
+                    <td class="text-left"><%= sign.respiratory %></td>
+                    <td class="text-left"><%= sign.date.toLocaleDateString()%></td>
+                <% })%>
+                </tr>
+        </table>
+        <a href="/nurse" style="margin-top: 30px; margin-bottom: 20px; width: 300px; text-align: center;">Back to Home Page</a>
+    </div>
+        </div>
+    </body>
+</html>

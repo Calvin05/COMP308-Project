@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div id='allpage' style="margin: 20px 20px 0 20px;">
+        <h1 style="margin-left: 20px; font-weight: bold; width: 70%; display: inline-block;">Nurse Dashboard</h1>
+        <img src="img/icon.png" style="height: 155px; width: 155px; float: right; margin-top: 5px; margin-right: 20px;">
+        <h2 style="margin-left: 20px; padding-bottom: 10px; width: 50%; display: inline-block;">Hello, <%= user.firstName %></h2>
+        <a href="logout" style="margin-left: 20px;">log out</a>
+    </div>
+    <div class="pinfo" style="background-color: white; border-radius: 5px ;width: 45%; text-align: center; margin-top: 20px; margin-right: 20px; display: inline-block; float: right;">
+        <h2 style="padding-top: 10px;">List of Patient</h2>
+        <table style="width: 92%; margin: 0 auto; margin-bottom: 20px;" class="table table-bordered table-sm table-light">
+            <tr style="background-color: #f4a460;">
+                <th class="text-left">Firt Name</th>
+                <th class="text-left">Last Name </th>
+                <th class="text-center">Status</th>
+                <th class="text-center">Vital Sign</th>
+            </tr>
+            <% patients.forEach(function(patient){ %>
+                <tr id="tbrow">
+                    <td class="text-left"><%= patient.firstName %></td>
+                    <td class="text-left"><%= patient.lastName %></td>
+                    <td class="text-center">Active</td>
+                    <td class="text-center">
+                        <form action="/detail" method="POST">
+                            <input type="text" name="id" value=<%= patient._id %> hidden >
+                            <input type="text" name="name" value=<%= patient.firstName %> hidden>
+                            <button type="submit" class="btn btn-primary">Detail</button>
+                        </form>
+                    </td>
+                <% })%>
+                </tr>
+        </table>
+       
+    </div>
+    <div class="pinfo" style="background-color: white; border-radius: 5px ;width: 45%; text-align: center; margin-top: 20px; margin-left: 20px; display: inline-block;">
+        <h2 style="padding-top: 10px;">Your Daily Vital Signs</h2>
+        <table style="width: 92%; margin: 0 auto;" class="table table-bordered table-sm table-light">
+            <tr style="background-color: #f4a460;">
+                <th class="text-left">Pulse Rate</th>
+                <th class="text-left">Blood Pressure </th>
+                <th class="text-left">weight</th>
+                <th class="text-left">Temperature</th>
+                <th class="text-left">Respiratory Rate</th>
+                <th class="text-left">Date</th>
+            </tr>
+            <% signs.forEach(function(sign){ %>
+                <tr id="tbrow">
+                    <td class="text-left"><%= sign.pulseRate %></td>
+                    <td class="text-left"><%= sign.bloodPressure %></td>
+                    <td class="text-left"><%= sign.weight %></td>
+                    <td class="text-left"><%= sign.temperature %></td>
+                    <td class="text-left"><%= sign.respiratory %></td>
+                    <td class="text-left"><%= sign.date.toLocaleDateString()%></td>
+                <% })%>
+                </tr>
+        </table>
+        <a class="btn btn-primary" href="signs" style="margin-top: 30px; margin-bottom: 20px; color: white;">Add Vital Sign</a>
+    </div>
+    <div class="tinfor"  style="background-color: white; border-radius: 5px ; margin: 20px;">
+        <h2 style="margin-left: 20px; padding-top: 10px; padding-bottom: 10px; font-weight: bold; color: #ff8c00;">Userful Tip</h2>
+        <% tips.forEach(function(tip){ %>
+            <h3 style="margin-left: 20px"><%= tip.tip %></h3>
+            <% })%>
+        <a class="btn btn-primary" href="tip" style="margin-top: 30px; margin-bottom: 20px; color: white; width: 100px; margin-bottom: 20px; margin-left: 20px;">Add Tip</a>
+    </div>
+ </body>

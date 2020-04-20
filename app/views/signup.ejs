@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/feedback.css">
+</head>
+<body>
+    <div id='allpage' style="height: 490px;">
+        <h1>Sign Up</h1>
+        <div id="form">
+            <div id="line"></div>
+            <form action="/users" method="post" >
+                <div class="form-group">
+                  <label for="fullName">First Name:</label>
+                        <input type="text" name="firstName"/>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                          <input type="text" name="lastName" required/>
+                  </div>
+                <div class="form-group">
+                    <label for="username">User Name:</label>
+                          <input type="text" name="username" required/>
+                  </div>
+                  <div class="form-group">
+                      <label for="password">Password:</label>
+                          <input type="password" name="password" required/>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="role">SignUp As:</label>
+                    <select class="form-control form-control-lg w-100" name="role">
+                        <option value="patient">Patient</option>
+                        <option value="nurse">Nurse</option>
+                      </select>
+                    </div>
+                  <br> <br>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

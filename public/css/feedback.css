@@ -1,0 +1,100 @@
+body {
+    background-image: url(/img/background.jpg);
+    background-size: cover;
+  }
+  #allpage{
+      margin: 10px auto;
+      margin-top: 8em;
+      width: 500px;
+      background-color: #fff;
+      border-radius: 3px;
+      box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.5);
+      text-align: center;
+
+    }
+    h1 
+    {
+        padding-top: 25px;
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 5px;
+    }
+    #line {
+        height: 2px;
+        background-color: black;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .form-group 
+    {
+        width: 420px;
+        display: inline-block;
+        margin-top: 20px;
+    }
+    label {
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 110px;
+        float: left;
+        text-align: right;
+        font-size: 16px;
+        margin-top: 6px;
+    }
+    input 
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        padding-left: 5px;
+        float: right;
+        height: 30px;
+        width: 280px;
+        border-radius: 2px;
+        border: 1px solid #CDCDCD;
+    }
+    textarea 
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        float: right;
+        width: 280px;
+        font-size: 16px;
+        padding-left: 5px;
+        border-radius: 2px;
+        border: 1px solid #CDCDCD;
+    }
+    select 
+    {
+        width: 287px;
+        float: right;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        min-height: 30px;
+        height: 30px;
+       
+    }
+
+    option {
+
+        font-size: 20px;
+        height: 30px;
+    }
+    button
+    {
+        margin-top: 20px;
+        width: 85%;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid #CDCDCD;
+        font-size: 17px;
+        background-color: #4CAF50;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        text-transform: capitalize;
+        
+      }
+      button:hover
+      {
+        filter: brightness(0.9);
+      }
+    

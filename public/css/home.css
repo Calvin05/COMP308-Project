@@ -1,0 +1,31 @@
+body {
+    background-image: url(/img/background.jpg);
+    background-size: cover;
+  }
+#allpage{
+      /* height: 220px; */
+      background-color: #fff;
+      border-radius: 3px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h1 
+    {
+        padding-top: 25px;
+        font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 5px;
+    }
+    #line {
+        height: 2px;
+        background-color: black;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    a, a:visited {
+        text-decoration: none;
+        color: #1089ff;
+        font-size: 20px;
+        display: block;
+    }

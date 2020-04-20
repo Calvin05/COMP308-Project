@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check List</title>
+    <link rel="stylesheet" href="css/feedback.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div id='allpage'>
+        <h1>Check List</h1>
+        <div id="form">
+            <div id="line"></div>
+            <form action="/list" method="post" >
+                  <div class="form-group">
+                    <label for="first" style="width: 90%; text-align: left;">Which part of your body feels hurt:</label>
+                    <select class="form-control form-control-lg w-100" name="first">
+                        <option value="1">Head</option>
+                        <option value="2">Back</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="second" style="width: 90%; text-align: left;">Do you experiencing high temporature :</label>
+                        <select class="form-control form-control-lg w-100" name="second">
+                            <option value="1">Yes</option>
+                            <option value="2">No</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="third" style="width: 90%; text-align: left;">Have you coughed recently:</label>
+                            <select class="form-control form-control-lg w-100" name="third">
+                                <option value="1">Yes</option>
+                                <option value="2">No</option>
+                              </select>
+                            </div>
+                  <br> <br>
+                <button type="submit" style="margin-bottom: 20px;">Diagnose</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
